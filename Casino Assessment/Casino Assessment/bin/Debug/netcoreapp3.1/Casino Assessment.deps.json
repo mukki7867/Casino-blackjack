@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Casino Assessment/1.0.0": {
+        "runtime": {
+          "Casino Assessment.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Casino Assessment/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
