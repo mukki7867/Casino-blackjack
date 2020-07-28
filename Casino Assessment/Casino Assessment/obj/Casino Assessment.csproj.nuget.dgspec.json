@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mukki\\source\\repos\\Casino Assessment\\Casino Assessment\\Casino Assessment.csproj": {}
+    "C:\\Templates\\Github\\Casino-blackjack\\Casino Assessment\\Casino Assessment\\Casino Assessment.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mukki\\source\\repos\\Casino Assessment\\Casino Assessment\\Casino Assessment.csproj": {
+    "C:\\Templates\\Github\\Casino-blackjack\\Casino Assessment\\Casino Assessment\\Casino Assessment.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mukki\\source\\repos\\Casino Assessment\\Casino Assessment\\Casino Assessment.csproj",
+        "projectUniqueName": "C:\\Templates\\Github\\Casino-blackjack\\Casino Assessment\\Casino Assessment\\Casino Assessment.csproj",
         "projectName": "Casino Assessment",
-        "projectPath": "C:\\Users\\Mukki\\source\\repos\\Casino Assessment\\Casino Assessment\\Casino Assessment.csproj",
+        "projectPath": "C:\\Templates\\Github\\Casino-blackjack\\Casino Assessment\\Casino Assessment\\Casino Assessment.csproj",
         "packagesPath": "C:\\Users\\Mukki\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mukki\\source\\repos\\Casino Assessment\\Casino Assessment\\obj\\",
+        "outputPath": "C:\\Templates\\Github\\Casino-blackjack\\Casino Assessment\\Casino Assessment\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

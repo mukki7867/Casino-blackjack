@@ -11,3 +11,16 @@ C:\Users\Mukki\source\repos\Casino Assessment\Casino Assessment\obj\Debug\netcor
 C:\Users\Mukki\source\repos\Casino Assessment\Casino Assessment\obj\Debug\netcoreapp3.1\Casino Assessment.dll
 C:\Users\Mukki\source\repos\Casino Assessment\Casino Assessment\obj\Debug\netcoreapp3.1\Casino Assessment.pdb
 C:\Users\Mukki\source\repos\Casino Assessment\Casino Assessment\obj\Debug\netcoreapp3.1\Casino Assessment.genruntimeconfig.cache
+C:\Templates\Github\Casino-blackjack\Casino Assessment\Casino Assessment\bin\Debug\netcoreapp3.1\Casino Assessment.exe
+C:\Templates\Github\Casino-blackjack\Casino Assessment\Casino Assessment\bin\Debug\netcoreapp3.1\Casino Assessment.deps.json
+C:\Templates\Github\Casino-blackjack\Casino Assessment\Casino Assessment\bin\Debug\netcoreapp3.1\Casino Assessment.runtimeconfig.json
+C:\Templates\Github\Casino-blackjack\Casino Assessment\Casino Assessment\bin\Debug\netcoreapp3.1\Casino Assessment.runtimeconfig.dev.json
+C:\Templates\Github\Casino-blackjack\Casino Assessment\Casino Assessment\bin\Debug\netcoreapp3.1\Casino Assessment.dll
+C:\Templates\Github\Casino-blackjack\Casino Assessment\Casino Assessment\bin\Debug\netcoreapp3.1\Casino Assessment.pdb
+C:\Templates\Github\Casino-blackjack\Casino Assessment\Casino Assessment\obj\Debug\netcoreapp3.1\Casino Assessment.csprojAssemblyReference.cache
+C:\Templates\Github\Casino-blackjack\Casino Assessment\Casino Assessment\obj\Debug\netcoreapp3.1\Casino Assessment.AssemblyInfoInputs.cache
+C:\Templates\Github\Casino-blackjack\Casino Assessment\Casino Assessment\obj\Debug\netcoreapp3.1\Casino Assessment.AssemblyInfo.cs
+C:\Templates\Github\Casino-blackjack\Casino Assessment\Casino Assessment\obj\Debug\netcoreapp3.1\Casino Assessment.csproj.CoreCompileInputs.cache
+C:\Templates\Github\Casino-blackjack\Casino Assessment\Casino Assessment\obj\Debug\netcoreapp3.1\Casino Assessment.dll
+C:\Templates\Github\Casino-blackjack\Casino Assessment\Casino Assessment\obj\Debug\netcoreapp3.1\Casino Assessment.pdb
+C:\Templates\Github\Casino-blackjack\Casino Assessment\Casino Assessment\obj\Debug\netcoreapp3.1\Casino Assessment.genruntimeconfig.cache

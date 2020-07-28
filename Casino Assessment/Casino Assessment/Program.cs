@@ -20,6 +20,8 @@ namespace Casino_Assessment
             static int SuiteTotal = 1;
             static bool NaturalBlackJack = false;
 
+            static int wins = 0;
+            static int loses = 0;
 
             static int dealerTotal = 0;
             static Random cardRandomizer = new Random();
@@ -52,16 +54,27 @@ namespace Casino_Assessment
             //Deals the player and the dealer cards . Displays a welcome message and asks the player if they would like to hit or stop
             static void StartGame()
             {
-                dealerTotal = cardRandomizer.Next(16, 22);
+                dealerTotal = cardRandomizer.Next(17, 22);
                 CardDeck[0] = DealCard();
                 CardDeck[1] = DealCard();
-
+                
+                //Checking cards for a Natural BlackJack
                 if ((CardDeck[0] == Keys.Ace || CardDeck[1] ==  Keys.Ace) && (CardDeck[0] == Keys.Ten || CardDeck[1] ==  Keys.Ten || CardDeck[0] == Keys.Jack || CardDeck[1] ==  Keys.Jack || CardDeck[0] == Keys.Queen || CardDeck[1] ==  Keys.Queen || CardDeck[0] == Keys.King || CardDeck[1] ==  Keys.King))   
                 {
                     NaturalBlackJack = true;
                     CardSuiteDeck[0] = DealSuite();
                     CardSuiteDeck[1] = DealSuite();
-                    Console.WriteLine("You got BlackJack Congrats ! The dealer's player Total was : {0}", dealerTotal);
+
+                    if (dealerTotal == 21)
+                    {
+                        Console.WriteLine("Oops , this is a stand-off, nobody wins ! The dealer's player Total was : {0}", dealerTotal);
+                    }
+
+                    else
+                    {
+                        Console.WriteLine("Congrats , You got BlackJack ! The dealer's player Total was : {0}", dealerTotal);
+                    }
+
                     Console.WriteLine("Would you like to play again? (Y)es or (N)o?");
                     Console.ReadLine();
                     Console.Clear();
@@ -126,7 +139,9 @@ namespace Casino_Assessment
                 {
                     if (playerTotal > dealerTotal && playerTotal <= 21)
                     {
-                        Console.WriteLine("Congrats! You won the game! The dealer's Total was : {0} ", dealerTotal);
+                        wins++;
+                        loses = 0;  
+                        Console.WriteLine("Congrats! You won the game! You have " +  wins + " win(s).The dealer's Total was : {0} ", dealerTotal);
                     }
                     else if (playerTotal < dealerTotal)
                     {
@@ -136,10 +151,21 @@ namespace Casino_Assessment
                         }
                         else
                         {
-                            Console.WriteLine("Sorry, you lost! The dealer's Total was : {0}", dealerTotal);
+                            Console.WriteLine("Sorry, you've lost! The dealer's Total was : {0}", dealerTotal);
                         }
-                }
-                }
+
+                        loses++;
+
+                        if (loses > 2)
+                        {
+                            Console.WriteLine("You're losing a lot");
+                        }
+                    }
+                    else if (playerTotal == dealerTotal)
+                    {
+                        Console.WriteLine("You and the dealer got the same total , it's a Stand-Off !");
+                    }
+            }
 
             }
 
@@ -267,7 +293,14 @@ namespace Casino_Assessment
 
                 if (NaturalBlackJack)
                 {
+                    wins++;
+                    Console.WriteLine("Congrats! You won the game! You have " + wins + " win(s).The dealer's Total was : {0} ", dealerTotal);
                     Console.WriteLine("You got 21 Blackjack! The dealer's player Total was : {0}. ", dealerTotal);
+                    loses = 0;
+                }
+                else if (playerTotal == dealerTotal)
+                {
+                    Console.WriteLine("You and the dealer got the same total , it's a Stand-Off !");
                 }
                 else if (playerTotal == 21)
                 {
@@ -285,7 +318,14 @@ namespace Casino_Assessment
                 }
                 else if (playerTotal > 21)
                 {
+                    loses++;
                     Console.WriteLine("You got more than 21 ! You lose ! The dealer's player Total was : {0}", dealerTotal);
+
+                    if (loses > 2)
+                    {
+                        Console.WriteLine("You're losing a lot , maybe you should take it easy? ");
+                    }
+
                 }
                 else if (playerTotal < 21)
                 {
